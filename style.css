@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wild Lines';
+    color: lightcyan;
+}
+
+body{   
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(to bottom, #0077be, #00aaff, #004466);
+    overflow-x: hidden;
+}
+
+#pani{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, #0077be, #00aaff);
+    animation: fillWater 5s ease-in-out forwards;
+}
+
+/* Water Rising Animation */
+@keyframes fillWater {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0%;
+    }
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.page1 {
+    position: relative;
+    animation: wave 5s infinite linear alternate;
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+        transform: translateY(50px)
+    }
+    100% {
+        transform: translateX(-50px);
+        transform: translateY(0);
+    }
+}
+
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1;
+}
+
+#top_heading{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1;
+    font-size: 2rem;
+    white-space: nowrap;
+
+}
+
+#logo h1{
+    font-size: 6rem;
+    color: white;
+    font-family: 'Ahsing';
+    font-weight: 900;
+}
+
+#logo h3{
+    font-size: 3rem;
+    font-family: 'Ahsing';
+    line-height: 1;
+    font-weight: 100;
+}
+
+#page1_last {
+    position: absolute;
+    bottom: 0;
+}
+
+#page1_last img{
+    width: 100vw;
+}
+
+#diver_right img{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 18vw;
+    height: 70vh;
+}
+
+.page2 {
+    position: relative;
+}
+
+#page2_top{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    text-align: center;
+    line-height: 1;
+    font-size: 2rem;
+    right: 5%;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+#page2_right{
+    position: absolute;
+    bottom: 0.5%;
+    right: 0%;
+    height: 50vh;
+}
+
+#page2_right img{
+    height: 50vh;
+    width: auto;
+}
+
+#baseimage_page2{
+    position: absolute;
+    bottom: -2%;
+    width: 100vw;
+}
+
+#baseimage_page2 img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+#page2_silder{
+    position: absolute;
+    width: 450vw;
+    height: 50vh;
+    top: 46%;
+    left: 30%;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image{
+    height: 100%;
+    width: 26vw;
+    position: relative;
+}
+
+#image1{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.09) 50%, rgb(0, 0, 0) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.page3 {
+    position: relative;
+}
+
+#page3_bottom{
+    position: absolute;
+    bottom: -5%;
+    width: 100vw;
+    height: 95vh;
+}
+
+#page3_bottom img{
+    width: 100%;
+    height: 100%;
+}
+
+#pag3_bottom_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#overlay, #overlay2, #overlay3{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.352);
+    backdrop-filter: blur(3px);
+    background-color: rgba(150, 193, 207, 0.271);
+}
+
+#rates_div{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page4_box{
+    width: 20vw;
+    height: 100%;
+    background-color: rgba(224, 255, 255, 0.651);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.page4_content_box{
+    text-align: center;
+    width: 98%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.782);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+#top_page4{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.box4_part1{
+    width: 95%;
+    height: 20%;
+    z-index: 100;
+}
+
+.box4_part2{
+    width: 55%;
+    height: 40%;
+    background-color: lightcyan;
+    z-index: 100;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4_part3{
+    width: 95%;
+    height: 30%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.box4_part3 h4{
+    font-size: 0.8rem;
+    font-weight: 100;
+
+    font-family: 'Segoe UI';
+    line-height: 0.8;
+
+}
+.box4_part1 h3{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 0.8;
+
+}
+
+
+.box4_part2 img{
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+}
+#page5{
+    position: relative;
+}
+
+#page5_bottom img{
+    
+    width: 100vw;
+    height: 100%;   
+    object-fit: cover;
+    object-position: center;
+}
+
+#heading{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.circle1{
+    opacity: 0.8;
+}
